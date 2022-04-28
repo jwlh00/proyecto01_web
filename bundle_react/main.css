@@ -7,7 +7,7 @@
   \******************************************************************/
 .Navibar {
     margin: 15px;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 100vw;
     top: 0;
     z-index: 100;
@@ -30,8 +30,17 @@
     margin-left: 10vw;
 }
 
-.Center>p {
-    margin:10px;
+.Center>a {
+    padding:10px;
+    border-radius: 25px;
+}
+
+.Center>a:link, a:visited {
+    color: black;
+}
+
+.Center>a:hover {
+    background-color: grey;
 }
 
 .Right {
@@ -39,15 +48,31 @@
     display: flex;
     justify-content: right;
     margin-left: 5vw;
-    margin-right: 1vw;
+    margin-right: 2vw;
 }
 
-.Right>p {
-    margin:10px;
+.Right>a, p {
+    padding:10px;
+    border-radius: 25px;
 }
+
+.Right>a:link {
+    color: black;
+}
+
+.Right>a:hover, p:hover {
+    background-color: grey;
+}
+
+
 /*!****************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/Home.css ***!
   \****************************************************************/
+.MainScreen {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
 .model3Container, .modelyContainer, .modelsContainer, .modelxContainer, .panelsContainer, .roofContainer, .accsContainer {
     height: 100vh;
     width: 100vw;
@@ -55,6 +80,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-snap-align: start;
 }
 
 .model3Text, .modelyText, .modelsText, .modelxText, .panelsText, .roofText, .accsText {
@@ -75,7 +101,7 @@
     font-size: 15px;
 }
 
-.model3Subtittle>a, .modelySubtittle>a, .modelsSubtittle>a, .modelxSubttile>a {
+.model3Subtittle>a:link, .modelySubtittle>a:link, .modelsSubtittle>a:link, .modelxSubttile>a:link {
     color: black;
     text-decoration: underline;
 }
@@ -122,6 +148,51 @@
     margin-left: 43vw;
     color:white;
     background-color: black;
+}
+
+.Foot {
+    margin: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    background-color: transparent;
+    background: none; 
+}
+
+.Container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    margin-right: 5vw;
+}
+
+.Container>a {
+    padding:10px;
+    border-radius: 25px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    
+}
+
+.Container>a:link, a:visited {
+    color: grey;
+}
+/*!******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Footer.css ***!
+  \******************************************************************/
+.Foot {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    margin-left: 10vw;
+}
+
+.Foot>a {
+    padding:10px;
+    border-radius: 25px;
+}
+
+.Foot>a:link, a:visited {
+    color: black;
 }
 /*!********************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/Appstart.css ***!

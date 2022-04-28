@@ -1,3 +1,8 @@
+.MainScreen {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
 .model3Container, .modelyContainer, .modelsContainer, .modelxContainer, .panelsContainer, .roofContainer, .accsContainer {
     height: 100vh;
     width: 100vw;
@@ -5,6 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-snap-align: start;
 }
 
 .model3Text, .modelyText, .modelsText, .modelxText, .panelsText, .roofText, .accsText {
@@ -25,7 +31,7 @@
     font-size: 15px;
 }
 
-.model3Subtittle>a, .modelySubtittle>a, .modelsSubtittle>a, .modelxSubttile>a {
+.model3Subtittle>a:link, .modelySubtittle>a:link, .modelsSubtittle>a:link, .modelxSubttile>a:link {
     color: black;
     text-decoration: underline;
 }
@@ -72,4 +78,31 @@
     margin-left: 43vw;
     color:white;
     background-color: black;
+}
+
+.Foot {
+    margin: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    background-color: transparent;
+    background: none; 
+}
+
+.Container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    margin-right: 5vw;
+}
+
+.Container>a {
+    padding:10px;
+    border-radius: 25px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    
+}
+
+.Container>a:link, a:visited {
+    color: grey;
 }

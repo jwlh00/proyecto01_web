@@ -1,6 +1,6 @@
 .Navibar {
     margin: 15px;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 100vw;
     top: 0;
     z-index: 100;
@@ -23,8 +23,17 @@
     margin-left: 10vw;
 }
 
-.Center>p {
-    margin:10px;
+.Center>a {
+    padding:10px;
+    border-radius: 25px;
+}
+
+.Center>a:link, a:visited {
+    color: black;
+}
+
+.Center>a:hover {
+    background-color: grey;
 }
 
 .Right {
@@ -32,9 +41,19 @@
     display: flex;
     justify-content: right;
     margin-left: 5vw;
-    margin-right: 1vw;
+    margin-right: 2vw;
 }
 
-.Right>p {
-    margin:10px;
+.Right>a, p {
+    padding:10px;
+    border-radius: 25px;
 }
+
+.Right>a:link {
+    color: black;
+}
+
+.Right>a:hover, p:hover {
+    background-color: grey;
+}
+

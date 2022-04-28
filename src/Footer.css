@@ -1,0 +1,15 @@
+.Foot {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    margin-left: 10vw;
+}
+
+.Foot>a {
+    padding:10px;
+    border-radius: 25px;
+}
+
+.Foot>a:link, a:visited {
+    color: black;
+}

@@ -6,21 +6,21 @@ export default function Navbar() {
   return (
     <div className='Navibar'>
       <div className='Logo'>
-        <img src={Tesla} alt="Tesla Logo"></img>
+        <a href = 'index.html'><img src={Tesla} alt="Tesla Logo"></img></a>
       </div>
 
       <div className='Center'>
-        <p>Model S</p>
-        <p>Model 3</p>
-        <p>Model X</p>
-        <p>Model Y</p>
-        <p>Solar Roof</p>
-        <p>Solar Panels</p>
+        <a href = 'index.html'>Model S</a>
+        <a href = 'index.html'>Model 3</a>
+        <a href = 'index.html'>Model X</a>
+        <a href = 'index.html'>Model Y</a>
+        <a href = 'index.html'>Solar Roof</a>
+        <a href = 'index.html'>Solar Panels</a>
       </div>
 
       <div className='Right'>
-        <p>Shop</p>
-        <p>Account</p>
+        <a href = 'index.html'>Shop</a>
+        <a href = 'index.html'>Account</a>
         <p>Menu</p>
       </div>
     </div>
